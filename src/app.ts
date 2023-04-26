@@ -16,7 +16,6 @@ app.get('/', async (req: Request, res: Response) => {
   if (priceSpread == null) {
     res.status(503).send('Service temporarily unavailable');
   } else {
-    PriceService.cache.binanceBitcoinPriceSpread;
     const response: PriceSpreadDto = {
       ask: priceSpread.ask.toFixed(8),
       bid: priceSpread.bid.toFixed(8),

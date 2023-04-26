@@ -11,7 +11,7 @@ export class PriceService {
     ConfigService.config.UPDATE_INTERVAL_MILLIS,
   );
 
-  static cache = {
+  private static cache = {
     binanceBitcoinPriceSpread: PriceService.binanceBitcoinPriceSpread(),
   };
 
